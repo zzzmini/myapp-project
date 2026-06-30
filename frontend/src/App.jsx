@@ -62,18 +62,17 @@ export default function App() {
   }, []);
 
   return (
-    <>
-      <div className="p-6">
-        <h1>My App</h1>
-        <p className="mt-2">CI/CD OK!!!!</p>
-      </div>
+
       <Container className="py-4">
         <Row className="mb-3">
           <Col>
             <h3>사용자 관리</h3>
           </Col>
         </Row>
-
+        <Row className="mb-3">
+          <h1>My App</h1>
+          <p>CI/CD OK!!!!</p>
+        </Row>
         <Row className="g-2 align-items-end mb-4">
           <Col md={4}>
             <Form.Label>이름</Form.Label>
@@ -144,6 +143,5 @@ export default function App() {
           </Col>
         </Row>
       </Container>
-    </>
   );
 }
